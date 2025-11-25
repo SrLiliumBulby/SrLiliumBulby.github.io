@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Waritsara Wangtian</title>
+  <script src="/_sdk/element_sdk.js"></script>
   <style>
     * {
       margin: 0;
@@ -129,7 +130,7 @@
       flex-shrink: 0;
       position: relative;
       animation: float 3s ease-in-out infinite;
-      overflow: hidden;
+      overflow: visible;
     }
     
     .profile-icon img {
@@ -214,6 +215,41 @@
       font-size: 18px;
       color: #700;
       font-style: italic;
+    }
+    
+    .greeting-text h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #d63384;
+      font-family: cursive, 'Brush Script MT', fantasy;
+    }
+    
+    .greeting-text p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+    
+    .content-section {
+      background: white;
+      border: 2px solid #efd1d1;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0px 3px 10px rgba(239, 209, 209, 0.3);
+    }
+    
+    .content-section h3 {
+      font-size: 24px;
+      color: #d63384;
+      margin-bottom: 15px;
+      font-family: cursive, 'Brush Script MT', fantasy;
+    }
+    
+    .content-section p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.7;
     }
     
     .dashboard-section {
@@ -404,6 +440,7 @@
       color: #000;
       display: inline-block;
       margin-bottom: 20px;
+      border: none;
     }
     
     .back-button:hover {
@@ -482,11 +519,22 @@
       .hobbies-list {
         grid-template-columns: 1fr;
       }
+      
+      .main-container {
+        padding: 20px 15px;
+      }
+      
+      .greeting-text h2 {
+        font-size: 24px;
+      }
+      
+      .content-section {
+        padding: 20px;
+      }
     }
   </style>
   <style>@view-transition { navigation: auto; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
-  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
   <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
  </head>
  <body>
@@ -495,17 +543,17 @@
     <div class="header-title">
      ⋆. 𐙚 ˚𝓟𝓸𝓻𝓽𝓯𝓸𝓵𝓲𝓸 ˚𐙚⋆.
     </div>
-    <nav class="header-nav"><a href="#" onclick="showPage('home'); return false;">Home</a> <a href="#about">About</a> <a href="#info">Info</a> <a href="#hobbies">Hobbies</a>
+    <nav class="header-nav"><a href="#home">Home</a> <a href="#about">About</a> <a href="#info">Info</a> <a href="#hobbies">Hobbies</a>
     </nav>
    </div>
   </header>
-  <main class="main-container"><!-- Home Page -->
+  <main class="main-container">
    <div id="home-page" class="page active">
     <section class="greeting-section">
      <div class="greeting-content">
       <div class="profile-icon">
        <div class="profile-animated-border"></div>
-       <div class="profile-animated-glow"></div><img src="https://appalling-coffee-3vtxijzdgi-4b3sqca2lk.edgeone.dev/mycos.jpg" alt="Waritsara Wangtian Profile Picture" onerror="this.style.display='none'; this.parentElement.innerHTML += '👤';">
+       <div class="profile-animated-glow"></div><img src="https://img.sanishtech.com/u/3510c26b1add2f1f7aa46a0bf9961e36.jpg" alt="Waritsara Wangtian Profile Picture" onerror="this.style.display='none'; this.parentElement.innerHTML += '👤';">
       </div>
       <div class="greeting-text">
        <h1 id="full-name">𝐖𝐚𝐫𝐢𝐭𝐬𝐚𝐫𝐚 𝐖𝐚𝐧𝐠𝐭𝐢𝐚𝐧</h1>
@@ -516,7 +564,7 @@
     <section class="dashboard-section" id="about">
      <h2>About Me</h2>
      <div class="about-content">
-      <p id="about-me-text">สวัสดีค่ะ! ฉัน Miss Waritsara (วริศรา นั่นแหละ) ชื่อเล่นชื่อ เค้ก ปัจจุบันศึกษาอยู่ที่มหาวิทยาลัยพะเยา คณะ ICT สาขา Computer Science (กำลังพยายามวิวัฒนาการเป็น homo sapiens) ̶̶ᴀ̶ ̶ᴅ̶ᴇ̶ʟ̶ᴜ̶ꜱ̶ɪ̶ᴏ̶ɴ̶ᴀ̶ʟ̶ ̶ꜰ̶ᴇ̶ᴍ̶ᴄ̶ᴇ̶ʟ̶ ̶ᴡ̶ʜ̶ᴏ̶ ̶ꜱ̶ᴘ̶ᴇ̶ɴ̶ᴛ̶ ̶ʜ̶ᴇ̶ʀ̶ ̶ʟ̶ɪ̶ꜰ̶ᴇ̶ ̶ɪ̶ɴ̶ ̶ɢ̶ᴀ̶ᴍ̶ᴇ̶ꜱ̶,̶ ̶ᴀ̶ʀ̶ᴛ̶ꜱ̶,̶ ̶ᴀ̶ɴ̶ᴅ̶ ̶ꜰ̶ᴀ̶ɴ̶ꜰ̶ɪ̶ᴄ̶ꜱ̶,̶ ̶ᴡ̶ɪ̶ᴛ̶ʜ̶ ̶ᴀ̶ ̶ꜱ̶ᴄ̶ʀ̶ᴇ̶ᴇ̶ɴ̶ ̶ʙ̶ʀ̶ɪ̶ɢ̶ʜ̶ᴛ̶ᴇ̶ʀ̶ ̶ᴛ̶ʜ̶ᴀ̶ɴ̶ ̶ʜ̶ᴇ̶ʀ̶ ̶ꜰ̶ᴜ̶ᴛ̶ᴜ̶ʀ̶ᴇ̶,̶ ̶ᴀ̶ɴ̶ᴅ̶ ̶ꜱ̶ᴏ̶ᴍ̶ᴇ̶ʜ̶ᴏ̶ᴡ̶ ̶ᴇ̶ɴ̶ᴅ̶ᴇ̶ᴅ̶ ̶ᴜ̶ᴘ̶ ̶ꜱ̶ᴛ̶ᴜ̶ᴅ̶ʏ̶ɪ̶ɴ̶ɢ̶ ̶ᴄ̶ᴏ̶ᴍ̶-̶ ̶ꜱ̶ᴄ̶ɪ̶.̶</p>
+      <p id="about-me-text">สวัสดีค่ะ! ฉัน Miss Waritsara (วริศรา นั่นแหละ) ชื่อเล่นชื่อ เค้ก ปัจจุบันศึกษาอยู่ที่มหาวิทยาลัยพะเยา คณะ ICT สาขา Computer Science (กำลังพยายามวิวัฒนาการเป็น homo sapiens) ̶ᴀ̶ ̶ᴅ̶ᴇ̶ʟ̶ᴜ̶ꜱ̶ɪ̶ᴏ̶ɴ̶ᴀ̶ʟ̶ ̶ꜰ̶ᴇ̶ᴍ̶ᴄ̶ᴇ̶ʟ̶ ̶ᴡ̶ʜ̶ᴏ̶ ̶ꜱ̶ᴘ̶ᴇ̶ɴ̶ᴛ̶ ̶ʜ̶ᴇ̶ʀ̶ ̶ʟ̶ɪ̶ꜰ̶ᴇ̶ ̶ɪ̶ɴ̶ ̶ɢ̶ᴀ̶ᴍ̶ᴇ̶ꜱ̶,̶ ̶ᴀ̶ʀ̶ᴛ̶ꜱ̶,̶ ̶ᴀ̶ɴ̶ᴅ̶ ̶ꜰ̶ᴀ̶ɴ̶ꜰ̶ɪ̶ᴄ̶ꜱ̶,̶ ̶ᴡ̶ɪ̶ᴛ̶ʜ̶ ̶ᴀ̶ ̶ꜱ̶ᴄ̶ʀ̶ᴇ̶ᴇ̶ɴ̶ ̶ʙ̶ʀ̶ɪ̶ɢ̶ʜ̶ᴛ̶ᴇ̶ʀ̶ ̶ᴛ̶ʜ̶ᴀ̶ɴ̶ ̶ʜ̶ᴇ̶ʀ̶ ̶ꜰ̶ᴜ̶ᴛ̶ᴜ̶ʀ̶ᴇ̶,̶ ̶ᴀ̶ɴ̶ᴅ̶ ̶ꜱ̶ᴏ̶ᴍ̶ᴇ̶ʜ̶ᴏ̶ᴡ̶ ̶ᴇ̶ɴ̶ᴅ̶ᴇ̶ᴅ̶ ̶ᴜ̶ᴘ̶ ̶ꜱ̶ᴛ̶ᴜ̶ᴅ̶ʏ̶ɪ̶ɴ̶ɢ̶ ̶ᴄ̶ᴏ̶ᴍ̶-̶ ̶ꜱ̶ᴄ̶ɪ̶.̶</p>
      </div>
     </section>
     <section id="info">
@@ -529,7 +577,7 @@
        <h3>อายุ</h3>
        <p id="age">19 ปี</p>
       </div>
-      <div class="info-card"><span class="info-card-icon">˚.🎀༘⋆</span>
+      <div class="info-card"><span class="info-card-icon">˚˖𓍢ִ.🎀༘⋆</span>
        <h3>สีที่ชอบ</h3>
        <p id="favorite-color">สีแดง maroon</p>
       </div>
@@ -552,40 +600,137 @@
       </div>
      </div>
     </section>
-   </div><!-- Arts Page -->
-   <div id="arts-page" class="page">
-    <div class="detail-page"><button class="back-button" onclick="showPage('home')">← กลับหน้าหลัก</button>
-     <h2>🎨 ผลงานวาดรูป</h2>
-     <div class="detail-content">
-      <p>เนื้อหาจะเพิ่มเข้ามาเร็วๆ นี้ค่ะ ♡</p>
-     </div>
-    </div>
-   </div><!-- Games Page -->
-   <div id="games-page" class="page">
-    <div class="detail-page"><button class="back-button" onclick="showPage('home')">← กลับหน้าหลัก</button>
-     <h2>🎮 เกมที่ชอบ</h2>
-     <div class="detail-content">
-      <p>เนื้อหาจะเพิ่มเข้ามาเร็วๆ นี้ค่ะ ♡</p>
-     </div>
-    </div>
-   </div><!-- Reading Page -->
-   <div id="reading-page" class="page">
-    <div class="detail-page"><button class="back-button" onclick="showPage('home')">← กลับหน้าหลัก</button>
-     <h2>📚 นิยาย/มังงะ/Fanfics ที่ชอบ</h2>
-     <div class="detail-content">
-      <p>เนื้อหาจะเพิ่มเข้ามาเร็วๆ นี้ค่ะ ♡</p>
-     </div>
-    </div>
-   </div><!-- Music Page -->
-   <div id="music-page" class="page">
-    <div class="detail-page"><button class="back-button" onclick="showPage('home')">← กลับหน้าหลัก</button>
-     <h2>🎵 เพลงที่ชอบ</h2>
-     <div class="detail-content">
-      <p>เนื้อหาจะเพิ่มเข้ามาเร็วๆ นี้ค่ะ ♡</p>
+   </div>
+  </main><!-- Arts Page -->
+  <div id="arts-page" class="page">
+   <div class="detail-page"><button class="back-button" onclick="showPage('home')">← กลับหน้าหลัก</button>
+    <h2>🎨 Art Gallery</h2>
+    <div class="detail-content" style="text-align: left;">
+     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px;">
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/de0577fdc6e595cc3cbb7f1d187e54ae.jpg" alt="Art Gallery" style="width: 100%; height: auto; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎨</p>';">
+       </div>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/6512c215364a68bd6a5698039e033421.jpg" alt="Art Gallery" style="width: 100%; height: auto; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎨</p>';">
+       </div>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/4b9b4fc16d21d19e7f6141bfb1bd832e.jpg" alt="Art Gallery" style="width: 100%; height: auto; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎨</p>';">
+       </div>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/28ffff59bdb994b85353cf09b123a56f.jpg" alt="Art Gallery" style="width: 100%; height: auto; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎨</p>';">
+       </div>
+      </div>
      </div>
     </div>
    </div>
-  </main>
+  </div><!-- Games Page -->
+  <div id="games-page" class="page">
+   <div class="detail-page"><button class="back-button" onclick="showPage('home')">← กลับหน้าหลัก</button>
+    <h2>🎮 เกมที่ชอบ</h2>
+    <div class="detail-content">
+     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin-top: 20px;">
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/ac7cbc837bd23359886438a21f317eec.jpg" alt="YKMET: Strade" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎮</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">YKMET: Strade</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/c9d989a11a1e8300b3e5c78c61a05d48.jpg" alt="The Price Of Flesh" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎮</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">The Price Of Flesh</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/b85bde2454fd0a9d89bd71b8997729ba.jpg" alt="Overwatch 2" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎮</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Overwatch 2</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/c90f3c1f981c4260e0b77d0169c36542.jpg" alt="Baldur's Gate 3" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎮</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Baldur's Gate 3</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/453a18585fb3def25994a339edc841af.jpg" alt="Reverse: 1999" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎮</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Reverse: 1999</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/de9e2b51f5e73bfccf01e32fbb93d9c2.jpg" alt="Honkai: Star Rail" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎮</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Honkai: Star Rail</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Reading Page -->
+  <div id="reading-page" class="page">
+   <div class="detail-page"><button class="back-button" onclick="showPage('home')">← กลับหน้าหลัก</button>
+    <h2>📚 นิยาย/มังงะ/Fanfics ที่ชอบ</h2>
+    <div class="detail-content">
+     <p>♡</p>
+     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+      <div><img src="https://img.sanishtech.com/u/477e809bc91904f469b543f53ea20e88.jpg" alt="Delicious in Dungeon manga cover" style="width: 200px; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" onerror="this.style.display='none'; this.parentElement.innerHTML += '<svg width=\'200\' height=\'280\' viewBox=\'0 0 200 280\' style=\'border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\'><rect width=\'200\' height=\'280\' fill=\'#8B4513\'/><text x=\'100\' y=\'140\' text-anchor=\'middle\' fill=\'white\' font-size=\'18\'>📖</text><text x=\'100\' y=\'170\' text-anchor=\'middle\' fill=\'white\' font-size=\'14\'>Delicious in</text><text x=\'100\' y=\'190\' text-anchor=\'middle\' fill=\'white\' font-size=\'14\'>Dungeon</text></svg>';">
+       <p style="margin-top: 10px; font-size: 14px; color: #555;">Delicious in Dungeon</p>
+      </div>
+      <div><img src="https://img.sanishtech.com/u/22e0b01484319aa545a66e53042d0978.jpg" alt="Innocent manga cover" style="width: 200px; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" onerror="this.style.display='none'; this.parentElement.innerHTML += '<svg width=\'200\' height=\'280\' viewBox=\'0 0 200 280\' style=\'border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\'><rect width=\'200\' height=\'280\' fill=\'#2C3E50\'/><text x=\'100\' y=\'140\' text-anchor=\'middle\' fill=\'white\' font-size=\'18\'>📚</text><text x=\'100\' y=\'170\' text-anchor=\'middle\' fill=\'white\' font-size=\'16\'>Innocent</text></svg>';">
+       <p style="margin-top: 10px; font-size: 14px; color: #555;">Innocent</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Music Page -->
+  <div id="music-page" class="page">
+   <div class="detail-page"><button class="back-button" onclick="showPage('home')">← กลับหน้าหลัก</button>
+    <h2>🎵 Favorite Bands/Artists</h2>
+    <div class="detail-content">
+     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin-top: 20px;">
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/b76de07c03e4bd09eeb95c97bf0f51f0.jpg" alt="Ayesha Erotica" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎵</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Ayesha Erotica</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/7e1b666bc48e46cdd1703a4f6b8c395a.jpg" alt="Evanescence" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎵</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Evanescence</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/c216676a621151f6a410043933bfdbec.jpg" alt="Pierce the Veil" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>���</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Pierce the Veil</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/005992a00a603b7591c13c0d60a0c150.jpg" alt="Panic! at the Disco" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎵</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Panic! at the Disco</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/21eabb4faea8e81c6cc79e485ccc1ed0.jpg" alt="My Chemical Romance" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎵</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">My Chemical Romance</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/4ec5ed5a96f8cc6436378063c4a5af7b.jpg" alt="Paramore" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎵</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Paramore</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/93f5aa7eea7f94bcc3dfd85796419c50.jpg" alt="Fall Out Boy" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎵</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Fall Out Boy</p>
+      </div>
+      <div style="background: white; border: 2px solid #ffe1ea; border-radius: 8px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';">
+       <div style="width: 100%; background: #f5f5f5; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;"><img src="https://img.sanishtech.com/u/4842b2bf58a1a7e8bebdbe12301ce7fd.jpg" alt="Flyleaf" style="width: 100%; height: 250px; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.innerHTML += '<p style=\'color: #999; font-size: 48px;\'>🎵</p>';">
+       </div>
+       <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: center;">Flyleaf</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
   <footer id="footer">
    <p>© 2025 Portfolio</p>
   </footer>
@@ -618,6 +763,166 @@
         }
       });
     });
+
+    const defaultConfig = {
+      full_name: "𝐖𝐚𝐫𝐢𝐭𝐬𝐚𝐫𝐚 𝐖𝐚𝐧𝐠𝐭𝐢𝐚𝐧",
+      nickname: "𝙽𝚒𝚌𝚔𝚗𝚊𝚖𝚎: 𝙲𝚊𝚔𝚎",
+      about_me: "สวัสดีค่ะ! ฉัน Miss Waritsara (วริศรา นั่นแหละ) ชื่อเล่นชื่อ เค้ก ปัจจุบันศึกษาอยู่ที่มหาวิทยาลัยพะเยา คณะ ICT สาขา Computer Science (กำลังพยายามวิวัฒนาการเป็น homo sapiens) ̶ᴀ̶ ̶ᴅ̶ᴇ̶ʟ̶ᴜ̶ꜱ̶ɪ̶ᴏ̶ɴ̶ᴀ̶ʟ̶ ̶ꜰ̶ᴇ̶ᴍ̶ᴄ̶ᴇ̶ʟ̶ ̶ᴡ̶ʜ̶ᴏ̶ ̶ꜱ̶ᴘ̶ᴇ̶ɴ̶ᴛ̶ ̶ʜ̶ᴇ̶ʀ̶ ̶ʟ̶ɪ̶ꜰ̶ᴇ̶ ̶ɪ̶ɴ̶ ̶ɢ̶ᴀ̶ᴍ̶ᴇ̶ꜱ̶,̶ ̶ᴀ̶ʀ̶ᴛ̶ꜱ̶,̶ ̶ᴀ̶ɴ̶ᴅ̶ ̶ꜰ̶ᴀ̶ɴ̶ꜰ̶ɪ̶ᴄ̶ꜱ̶,̶ ̶ᴡ̶ɪ̶ᴛ̶ʜ̶ ̶ᴀ̶ ̶ꜱ̶ᴄ̶ʀ̶ᴇ̶ᴇ̶ɴ̶ ̶ʙ̶ʀ̶ɪ̶ɢ̶ʜ̶ᴛ̶ᴇ̶ʀ̶ ̶ᴛ̶ʜ̶ᴀ̶ɴ̶ ̶ʜ̶ᴇ̶ʀ̶ ̶ꜰ̶ᴜ̶ᴛ̶ᴜ̶ʀ̶ᴇ̶,̶ ̶ᴀ̶ɴ̶ᴅ̶ ̶ꜱ̶ᴏ̶ᴍ̶ᴇ̶ʜ̶ᴏ̶ᴡ̶ ̶ᴇ̶ɴ̶ᴅ̶ᴇ̶ᴅ̶ ̶ᴜ̶ᴘ̶ ̶ꜱ̶ᴛ̶ᴜ̶ᴅ̶ʏ̶ɪ̶ɴ̶ɢ̶ ̶ᴄ̶ᴏ̶ᴍ̶-̶ ̶ꜱ̶ᴄ̶ɪ̶.̶",
+      birthday: "21 ธันวาคม 2548",
+      age: "19 ปี",
+      favorite_color: "สีแดง maroon",
+      background_color: "#efd1d1",
+      surface_color: "#fde5e7",
+      text_color: "#d63384",
+      primary_action_color: "#fbc4db",
+      secondary_action_color: "#fcbfda",
+      font_family: "'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif",
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const baseFontStack = "'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif";
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseSize = config.font_size || defaultConfig.font_size;
+      const backgroundColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryActionColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryActionColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+
+      // Update text content
+      document.getElementById('full-name').textContent = config.full_name || defaultConfig.full_name;
+      document.getElementById('nickname-text').textContent = config.nickname || defaultConfig.nickname;
+      document.getElementById('about-me-text').textContent = config.about_me || defaultConfig.about_me;
+      document.getElementById('birthday').textContent = config.birthday || defaultConfig.birthday;
+      document.getElementById('age').textContent = config.age || defaultConfig.age;
+      document.getElementById('favorite-color').textContent = config.favorite_color || defaultConfig.favorite_color;
+
+      // Apply colors
+      document.body.style.backgroundColor = backgroundColor;
+      
+      const greetingSection = document.querySelector('.greeting-section');
+      greetingSection.style.background = `linear-gradient(to bottom right, white, ${surfaceColor}, white)`;
+      greetingSection.style.borderColor = primaryActionColor;
+      
+      const contentSections = document.querySelectorAll('.content-section h3');
+      contentSections.forEach(section => {
+        section.style.color = textColor;
+      });
+      
+      const profileIcon = document.querySelector('.profile-icon');
+      profileIcon.style.background = `linear-gradient(135deg, ${surfaceColor}, ${primaryActionColor})`;
+      
+      const profileImg = document.querySelector('.profile-icon img');
+      if (profileImg) {
+        profileImg.style.borderColor = primaryActionColor;
+      }
+      
+      document.querySelector('.header-title').style.textShadow = `-2px 3px 0 ${secondaryActionColor}`;
+      
+      const navLinks = document.querySelectorAll('.header-nav a');
+      navLinks.forEach(link => {
+        link.style.borderColor = primaryActionColor;
+      });
+
+      // Apply fonts
+      document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+      
+      // Apply font sizes
+      document.body.style.fontSize = `${baseSize}px`;
+      document.querySelector('.header-title').style.fontSize = `${baseSize * 2.25}px`;
+      const fullNameEl = document.getElementById('full-name');
+      if (fullNameEl) {
+        fullNameEl.style.fontSize = `${baseSize * 2}px`;
+      }
+      document.querySelectorAll('.greeting-text h2').forEach(el => {
+        el.style.fontSize = `${baseSize * 1.75}px`;
+      });
+      document.querySelectorAll('.content-section h3, .dashboard-section h2, .hobbies-section h2').forEach(el => {
+        el.style.fontSize = `${baseSize * 1.5}px`;
+      });
+      document.querySelectorAll('.greeting-text p, .content-section p, .about-content p').forEach(el => {
+        el.style.fontSize = `${baseSize}px`;
+      });
+      document.querySelectorAll('.header-nav a').forEach(el => {
+        el.style.fontSize = `${baseSize * 0.875}px`;
+      });
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              config.surface_color = value;
+              window.elementSdk.setConfig({ surface_color: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              window.elementSdk.setConfig({ text_color: value });
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              window.elementSdk.setConfig({ primary_action_color: value });
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              config.secondary_action_color = value;
+              window.elementSdk.setConfig({ secondary_action_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            window.elementSdk.setConfig({ font_family: value });
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            window.elementSdk.setConfig({ font_size: value });
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["full_name", config.full_name || defaultConfig.full_name],
+        ["nickname", config.nickname || defaultConfig.nickname],
+        ["about_me", config.about_me || defaultConfig.about_me],
+        ["birthday", config.birthday || defaultConfig.birthday],
+        ["age", config.age || defaultConfig.age],
+        ["favorite_color", config.favorite_color || defaultConfig.favorite_color]
+      ]);
+    }
+
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange,
+      mapToCapabilities,
+      mapToEditPanelValues
+    });
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a43965753c7d18a',t:'MTc2NDA5OTMwNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-</html>aaa
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a444fe95551f91a',t:'MTc2NDEwNjkwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
